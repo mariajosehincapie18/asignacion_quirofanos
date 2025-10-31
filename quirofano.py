@@ -30,12 +30,10 @@ class Quirofano:
 
             if current.leftchild is None:
                 current.leftchild = nuevo_nodo
-                nuevo_nodo.parent = current
                 break
             
             elif current.rightchild is None:
                 current.rightchild =nuevo_nodo
-                nuevo_nodo.parent = current
                 break
 
             cola_aux.enqueue(current.leftchild)
